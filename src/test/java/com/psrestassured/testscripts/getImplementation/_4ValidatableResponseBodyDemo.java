@@ -8,10 +8,8 @@ import org.testng.annotations.Test;
 
 public class _4ValidatableResponseBodyDemo extends BaseTest {
 
-
     @Test
     public void complexBodyExample(){
-
         RestAssured.get(BASE_URL + LIST_USER)
                 .then()
                 .body("support.text", response -> Matchers.containsString(response.body().jsonPath().get("support.text")));
@@ -23,7 +21,5 @@ public class _4ValidatableResponseBodyDemo extends BaseTest {
                 .then()
                 .body("support.url", response -> Matchers.containsString(response.body().jsonPath().get("support.url")));
         //.body("url", response -> Matchers.containsString("andrejs-ps"));
-
     }
-
 }
