@@ -1,4 +1,4 @@
-package com.psrestassured.pojoObjects;
+package com.psrestassured.pojoobjects;
 
 public class User {
 

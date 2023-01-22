@@ -1,4 +1,4 @@
-package com.psrestassured.dataProvider;
+package com.psrestassured.dataprovider;
 
 import org.testng.annotations.DataProvider;
 

@@ -14,7 +14,6 @@ public class _4ValidatableResponseBodyDemo extends BaseTest {
                 .then()
                 .body("support.text", response -> Matchers.containsString(response.body().jsonPath().get("support.text")));
     }
-
     @Test (dataProvider = "pageNumber", dataProviderClass = BaseDataProvider.class)
     public void complexBodyExampleUsingDataProvider(String pageNumber){
         RestAssured.get(BASE_URL + LIST_USER + pageNumber)
