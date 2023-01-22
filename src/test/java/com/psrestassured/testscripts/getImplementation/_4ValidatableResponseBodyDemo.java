@@ -1,6 +1,6 @@
 package com.psrestassured.testscripts.getImplementation;
 
-import com.psrestassured.dataProvider.BaseDataProvider;
+import com.psrestassured.dataprovider.BaseDataProvider;
 import com.psrestassured.testscripts.baseTest.BaseTest;
 import io.restassured.RestAssured;
 import org.hamcrest.Matchers;
