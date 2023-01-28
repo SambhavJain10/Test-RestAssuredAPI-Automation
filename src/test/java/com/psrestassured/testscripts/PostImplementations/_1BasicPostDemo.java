@@ -1,7 +1,6 @@
 package com.psrestassured.testscripts.PostImplementations;
 
-import com.psrestassured.dataProvider.BaseDataProvider;
-import com.psrestassured.pojoObjects.User;
+import com.psrestassured.pojoobjects.User;
 import com.psrestassured.testscripts.baseTest.BaseTest;
 
 import io.restassured.RestAssured;
