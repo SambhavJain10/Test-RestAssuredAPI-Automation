@@ -1,5 +1,7 @@
 package com.psrestassured.testscripts.getImplementation;
 
+import com.psrestassured.apiObjects.ListUsersAPIObject;
+import com.psrestassured.dataprovider.BaseDataProvider;
 import com.psrestassured.pojoobjects.Data;
 import com.psrestassured.pojoobjects.ListUsers;
 import com.psrestassured.testscripts.baseTest.BaseTest;
@@ -10,9 +12,9 @@ import java.util.List;
 
 public class _6ValidateResponseUsingPojo extends BaseTest {
 
-
     @Test
     public void asUserWouldLikeToValidatePayloadUsingPojo(){
+
         ListUsers listUsers= RestAssured.get(BASE_URL + LIST_USER).as(ListUsers.class);
 
         List<Data> listData=listUsers.getData();
@@ -24,5 +26,6 @@ public class _6ValidateResponseUsingPojo extends BaseTest {
         }
 
     }
+
 
 }
